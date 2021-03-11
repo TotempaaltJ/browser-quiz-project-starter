@@ -4,4 +4,8 @@ export function resetState() {
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
+    const hintBox = document.getElementById('hintBox')
+    while (hintBox.firstChild) {
+        hintBox.removeChild(hintBox.firstChild);
+    }
 }

@@ -27,5 +27,23 @@ export function displayQuestion() {
     button.addEventListener('click', selectAnswer);
     const answerButtonsElement = document.getElementById('answer-buttons');
     answerButtonsElement.appendChild(button);
+
+  };
+
+
+  /* Adding the link of resources of each question to the get hint part */
+  const hintBox = document.getElementById('hintBox')
+  hintBox.classList.remove('hide') 
+  for (const link of question.links) {  
+       const href = link.href
+       const hint = document.createElement('a');
+       hint.innerHTML= 'Hint'
+       hint.href = href
+       hintBox.appendChild(hint);
   }
+    
+  
+  
+  return questionArea;
+
 }

@@ -30,15 +30,19 @@ body {
   text-align: center;
 }
 
-#question-number,
-#question-correct {
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  font-size: 1.8rem;
-  color: chocolate;
-  text-shadow: 1px 1px 25px rgb(148, 137, 137);
+
+
+/* Add style to the counter of correct and questions number */
+#question-number, #question-correct {
+margin-bottom: 20px;
+padding-bottom: 10px;
+font-size:1.8rem;
+color: chocolate;
+text-shadow: 1px 1px 25px rgb(148, 137, 137);
+
 }
 
+/* Add style to the button of answers and controls as start and next */
 .btn-grid {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -54,11 +58,14 @@ body {
   color: white;
   outline: none;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .btn:hover {
+
   background-color: rgba(95, 158, 160, 0.7);
   cursor: pointer;
+
 }
 
 .btn.correct {
@@ -86,3 +93,22 @@ body {
 .hide {
   display: none;
 }
+
+
+/* Add style to the get hint text */
+#hintBox {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items:flex-end;
+  align-content: flex-end;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+#hintBox a{
+  text-decoration: none;
+  font-size:1.5rem;
+  color: chocolate;
+  text-shadow: 1px 1px 25px rgb(148, 137, 137);
+}
+
