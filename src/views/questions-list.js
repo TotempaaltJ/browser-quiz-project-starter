@@ -31,6 +31,13 @@ export function displayQuestion() {
     const answerButtonsElement = document.getElementById('answer-buttons');
     answerButtonsElement.appendChild(button);
   };
+
+
+/* Adding the link of resources of each question to the get hint part */
+const hint = document.getElementById('hint')
+hint.classList.remove('hide') 
+const href = (question.links).map (link => {const {href} = link; return href})
+hint.href = href
   
   return questionArea;
 }
