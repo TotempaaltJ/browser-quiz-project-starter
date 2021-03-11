@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
-   padding: 0;
+  padding: 0;
   margin: 0;
   display: flex;
   width: 100vw;
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color:cadetblue;
+  background-color: cadetblue;
   font-family: 'Concert One', cursive !important;
   font-size: 1.5rem !important;
 }
@@ -29,6 +31,7 @@ body {
 }
 
 
+
 /* Add style to the counter of correct and questions number */
 #question-number, #question-correct {
 margin-bottom: 20px;
@@ -36,6 +39,7 @@ padding-bottom: 10px;
 font-size:1.8rem;
 color: chocolate;
 text-shadow: 1px 1px 25px rgb(148, 137, 137);
+
 }
 
 /* Add style to the button of answers and controls as start and next */
@@ -58,7 +62,10 @@ text-shadow: 1px 1px 25px rgb(148, 137, 137);
 }
 
 .btn:hover {
-  border: rgba(255, 255, 255, 0.7)
+
+  background-color: rgba(95, 158, 160, 0.7);
+  cursor: pointer;
+
 }
 
 .btn.correct {
@@ -69,7 +76,8 @@ text-shadow: 1px 1px 25px rgb(148, 137, 137);
   background-color: red;
 }
 
-.start-btn, .next-btn {
+.start-btn,
+.next-btn {
   font-size: 3rem;
   font-weight: bold;
   padding: 10px 20px;
@@ -82,9 +90,10 @@ text-shadow: 1px 1px 25px rgb(148, 137, 137);
   align-items: center;
 }
 
-.hide{
+.hide {
   display: none;
 }
+
 
 /* Add style to the get hint text */
 #hintBox {
@@ -102,3 +111,4 @@ text-shadow: 1px 1px 25px rgb(148, 137, 137);
   color: chocolate;
   text-shadow: 1px 1px 25px rgb(148, 137, 137);
 }
+
