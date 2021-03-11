@@ -33,11 +33,18 @@ export function displayQuestion() {
   };
 
 
-/* Adding the link of resources of each question to the get hint part */
-const hint = document.getElementById('hint')
-hint.classList.remove('hide') 
-const href = (question.links).map (link => {const {href} = link; return href})
-hint.href = href
+  /* Adding the link of resources of each question to the get hint part */
+  const hintBox = document.getElementById('hintBox')
+  hintBox.classList.remove('hide') 
+  question.links.forEach(link => {
+  const href = link.href
+  const hint = document.createElement('a');
+  hint.innerHTML= 'Hint'
+  hint.href = href
+  hintBox.appendChild(hint);
+  })
+    
+  
   
   return questionArea;
 }
