@@ -6,6 +6,7 @@ import { showCount } from '../handlers/render-score.js';
 import { startGame } from '../handlers/startGame.js';
 import { setNextQuestion } from '../handlers/setNextQuestion.js';
 import { quizData } from '../data.js';
+import { deleteQuestion } from '../handlers/delete-question.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   renderScore();
@@ -40,6 +41,9 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 window.addEventListener('DomContentLoaded', displayQuestion);
+
+document.getElementById('deletequestion').addEventListener('click', deleteQuestion);
+
 
 document.getElementById('start-btn').addEventListener('click', startGame);
 document.getElementById('next-btn').addEventListener('click', setNextQuestion);
