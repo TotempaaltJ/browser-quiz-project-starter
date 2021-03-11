@@ -65,232 +65,232 @@ export const quizData = {
         },
       ],
     },*/
-    {
-      text: 'What does `typeof` do?',
-      answers: {
-        a: 'changes the type of a primitive value',
-        b: 'returns a string describing the type of a value',
-        c: 'determines if a value is primitive',
-        d: 'can tell the difference between arrays and objects',
-      },
-      correct: 'b',
-      selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/types#type-typeof',
-        },
-        {
-          text: 'MDN',
-          href:
-            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof',
-        },
-      ],
-    },
-    {
-      text: 'The return type of getElementsByClassName() is..',
-      answers: {
-        a: 'DOM',
-        b: 'Document',
-        c: 'Node',
-        d: 'NodeList', 
-      },
-      correct: 'd',
-      selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://www.examveda.com/javascript/practice-mcq-question-on-document-object-model-and-event-handling/?page=10',
-        },
-      ],
-    },
-    {
-      text: 'Which one of the following is correct?',
-      answers: {
-        a: 'i =+ 1',
-        b: 'i += 1',
-        c: 'i = i++1',
-        d: '+i+',
-      },
-      correct: 'b',
-      selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://www.w3docs.com/quiz/javascript-basic',
-        },
-      ],
-    },
-    {
-      text: 'Which of the following are examples of closures?',
-      answers: {
-        a: 'Objects',
-        b: 'Variables',
-        c: 'Functions',
-        d: 'All of the mentioned', 
-      },
-      correct: 'd',
-      selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://www.examveda.com/javascript/practice-mcq-question-on-document-object-model-and-event-handling/?page=10',
-        },
-      ],
-    },
-    {
-      text: 'Inside which element do you put JavaScript?',
-      answers: {
-        a: '<script>',
-        b: '<section>',
-        c: '<span>',
-        d: '<code>',
-      },
-      correct: 'a',
-      selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://www.w3docs.com/quiz/javascript-basic',
-        },
-      ],
-    },
-    {
-      text: 'Which is the function that calls another function after a time interval?',
-      answers: {
-        a: 'setTimeout()',
-        b: 'setTime()',
-        c: 'callAfter()',
-        d: 'None of the mentioned',
-      },
-      correct: 'a',
-      selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://study2online.com/javascript/animation/english/1/',
-        },
-      ],
-    },
-    {
-      text: 'Which array method sorts the elements of an array?',
-      answers: {
-        a: 'sort()',
-        b: 'changeOrder(order)',
-        c: 'order()',
-        d: 'None of the above methods',
-      },
-      correct: 'a',
-      selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://www.w3docs.com/quiz/javascript-basic',
-        },
-     ],
-    },
-    {
-      text: 'Which of the following is NOT JavaScript Data Types?',
-      answers: {
-        a: 'String',
-        b: 'Number',
-        c: 'Boolean',
-        d: 'Float',
-      },
-      correct: 'd',
-      selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://letsfindcourse.com/technical-questions/javascript-mcq/javascript-mcq-questions',
-        },
-      ],
-    },
-    {
-      text: 'Which of them is not the looping structures in JavaScript?',
-      answers: {
-        a: 'for',
-        b: 'forwhich',
-        c: 'while',
-        d: 'dowhile',
-      },
-      correct: 'b',
-      selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://letsfindcourse.com/technical-questions/javascript-mcq/javascript-mcq-questions-1',
-        },
-      ],
-    },
-    {
-      text: 'How to write an IF statement for executing some code if "i" is NOT equal to 5?',
-      answers: {
-        a: 'if i <> 5',
-        b: 'if (i != 5)',
-        c: 'if (i => 5)',
-        d: 'if i =! 5 then',
-      },
-      correct: 'b',
-      selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS',
-        },
-      ],
-    },
-    {
-      text: 'Which of the following is a CSS events?',
-      answers: {
-        a: 'keydown',
-        b: 'mouseout',
-        c: 'DOMContentLoaded',
-        d: 'transitionend',
-      },
-      correct: 'd',
-      selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/introduction-browser-events',
-        },
-      ],
-    },
-    {
-      text: 'What is the correct syntax for adding comments in JavaScript?',
-      answers: {
-        a: '<!–This is a comment',
-        b: '//This is a comment',
-        c: '–This is a comment',
-        d: '**This is a comment**',
-      },
-      correct: 'b',
-      selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://www.geeksforgeeks.org/javascript-quiz-set-2/',
-        },
-      ],
-    },
-    {
-      text: 'What is the method in JavaScript used to remove the whitespace at the beginning and end of any string?',
-      answers: {
-        a: 'strip()',
-        b: 'trim()',
-        c: 'stripped()',
-        d: 'trimmed()',
-      },
-      correct: 'b',
-      selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://www.geeksforgeeks.org/javascript-quiz-set-2/',
-        },
-      ],
-    },
+    // {
+    //   text: 'What does `typeof` do?',
+    //   answers: {
+    //     a: 'changes the type of a primitive value',
+    //     b: 'returns a string describing the type of a value',
+    //     c: 'determines if a value is primitive',
+    //     d: 'can tell the difference between arrays and objects',
+    //   },
+    //   correct: 'b',
+    //   selected: null,
+    //   links: [
+    //     {
+    //       text: 'javascript.info',
+    //       href: 'https://javascript.info/types#type-typeof',
+    //     },
+    //     {
+    //       text: 'MDN',
+    //       href:
+    //         'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof',
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'The return type of getElementsByClassName() is..',
+    //   answers: {
+    //     a: 'DOM',
+    //     b: 'Document',
+    //     c: 'Node',
+    //     d: 'NodeList', 
+    //   },
+    //   correct: 'd',
+    //   selected: null,
+    //   links: [
+    //     {
+    //       text: 'javascript.info',
+    //       href: 'https://www.examveda.com/javascript/practice-mcq-question-on-document-object-model-and-event-handling/?page=10',
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'Which one of the following is correct?',
+    //   answers: {
+    //     a: 'i =+ 1',
+    //     b: 'i += 1',
+    //     c: 'i = i++1',
+    //     d: '+i+',
+    //   },
+    //   correct: 'b',
+    //   selected: null,
+    //   links: [
+    //     {
+    //       text: 'javascript.info',
+    //       href: 'https://www.w3docs.com/quiz/javascript-basic',
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'Which of the following are examples of closures?',
+    //   answers: {
+    //     a: 'Objects',
+    //     b: 'Variables',
+    //     c: 'Functions',
+    //     d: 'All of the mentioned', 
+    //   },
+    //   correct: 'd',
+    //   selected: null,
+    //   links: [
+    //     {
+    //       text: 'javascript.info',
+    //       href: 'https://www.examveda.com/javascript/practice-mcq-question-on-document-object-model-and-event-handling/?page=10',
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'Inside which element do you put JavaScript?',
+    //   answers: {
+    //     a: '<script>',
+    //     b: '<section>',
+    //     c: '<span>',
+    //     d: '<code>',
+    //   },
+    //   correct: 'a',
+    //   selected: null,
+    //   links: [
+    //     {
+    //       text: 'javascript.info',
+    //       href: 'https://www.w3docs.com/quiz/javascript-basic',
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'Which is the function that calls another function after a time interval?',
+    //   answers: {
+    //     a: 'setTimeout()',
+    //     b: 'setTime()',
+    //     c: 'callAfter()',
+    //     d: 'None of the mentioned',
+    //   },
+    //   correct: 'a',
+    //   selected: null,
+    //   links: [
+    //     {
+    //       text: 'javascript.info',
+    //       href: 'https://study2online.com/javascript/animation/english/1/',
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'Which array method sorts the elements of an array?',
+    //   answers: {
+    //     a: 'sort()',
+    //     b: 'changeOrder(order)',
+    //     c: 'order()',
+    //     d: 'None of the above methods',
+    //   },
+    //   correct: 'a',
+    //   selected: null,
+    //   links: [
+    //     {
+    //       text: 'javascript.info',
+    //       href: 'https://www.w3docs.com/quiz/javascript-basic',
+    //     },
+    //  ],
+    // },
+    // {
+    //   text: 'Which of the following is NOT JavaScript Data Types?',
+    //   answers: {
+    //     a: 'String',
+    //     b: 'Number',
+    //     c: 'Boolean',
+    //     d: 'Float',
+    //   },
+    //   correct: 'd',
+    //   selected: null,
+    //   links: [
+    //     {
+    //       text: 'javascript.info',
+    //       href: 'https://letsfindcourse.com/technical-questions/javascript-mcq/javascript-mcq-questions',
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'Which of them is not the looping structures in JavaScript?',
+    //   answers: {
+    //     a: 'for',
+    //     b: 'forwhich',
+    //     c: 'while',
+    //     d: 'dowhile',
+    //   },
+    //   correct: 'b',
+    //   selected: null,
+    //   links: [
+    //     {
+    //       text: 'javascript.info',
+    //       href: 'https://letsfindcourse.com/technical-questions/javascript-mcq/javascript-mcq-questions-1',
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'How to write an IF statement for executing some code if "i" is NOT equal to 5?',
+    //   answers: {
+    //     a: 'if i <> 5',
+    //     b: 'if (i != 5)',
+    //     c: 'if (i => 5)',
+    //     d: 'if i =! 5 then',
+    //   },
+    //   correct: 'b',
+    //   selected: null,
+    //   links: [
+    //     {
+    //       text: 'javascript.info',
+    //       href: 'https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS',
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'Which of the following is a CSS events?',
+    //   answers: {
+    //     a: 'keydown',
+    //     b: 'mouseout',
+    //     c: 'DOMContentLoaded',
+    //     d: 'transitionend',
+    //   },
+    //   correct: 'd',
+    //   selected: null,
+    //   links: [
+    //     {
+    //       text: 'javascript.info',
+    //       href: 'https://javascript.info/introduction-browser-events',
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'What is the correct syntax for adding comments in JavaScript?',
+    //   answers: {
+    //     a: '<!–This is a comment',
+    //     b: '//This is a comment',
+    //     c: '–This is a comment',
+    //     d: '**This is a comment**',
+    //   },
+    //   correct: 'b',
+    //   selected: null,
+    //   links: [
+    //     {
+    //       text: 'javascript.info',
+    //       href: 'https://www.geeksforgeeks.org/javascript-quiz-set-2/',
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'What is the method in JavaScript used to remove the whitespace at the beginning and end of any string?',
+    //   answers: {
+    //     a: 'strip()',
+    //     b: 'trim()',
+    //     c: 'stripped()',
+    //     d: 'trimmed()',
+    //   },
+    //   correct: 'b',
+    //   selected: null,
+    //   links: [
+    //     {
+    //       text: 'javascript.info',
+    //       href: 'https://www.geeksforgeeks.org/javascript-quiz-set-2/',
+    //     },
+    //   ],
+    // },
     {
       text: 'what is the correct file extension for Javascript files?',
       answers: {
