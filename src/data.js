@@ -64,7 +64,7 @@ export const quizData = {
           href: 'https://ui.dev/var-let-const/',
         },
       ],
-    },*/
+    },
     {
       text: 'What does `typeof` do?',
       answers: {
@@ -222,7 +222,7 @@ export const quizData = {
           href: 'https://letsfindcourse.com/technical-questions/javascript-mcq/javascript-mcq-questions-1',
         },
       ],
-    },
+    },*/
     {
       text: 'How to write an IF statement for executing some code if "i" is NOT equal to 5?',
       answers: {
