@@ -1,6 +1,7 @@
 import { setStatusClass } from '../views/set-status.js';
 import { renderScore } from '../handlers/render-score.js';
 import { quizData } from '../data.js';
+import { data } from '../data.js';
 
 export function selectAnswer(event) {
   const selectedButton = event.target;
@@ -19,12 +20,25 @@ export function selectAnswer(event) {
   }
   quizData.quiz.answered += 1;
 
-  const answerButton = document.getElementById('answer-buttons').children;
+    const answerButton = document.getElementById('answer-buttons').children;
   for (const button of [...answerButton]) {
     setStatusClass(button, button.dataset.correct === button.dataset.answerKey);
   }
-
-  const nextButton = document.getElementById('next-btn');
-  nextButton.classList.remove('hide');
   renderScore();
+
+  if (data.randomQuestions.length > data.currentQuestionIndex + 1) {
+    const nextButton = document.getElementById('next-btn');
+    nextButton.classList.remove('hide');
+  } else {
+    nextButton.classList.add('hide');
+    const startBtn = document.getElementById('start-btn');
+    startBtn.classList.remove('hide');
+    startBtn.innerText = 'Restart';
+    const questionContainerElement = document.getElementById(
+      'question-container'
+    );
+    questionContainerElement.classList.add('hide');
+    const hintBox = document.getElementById('hintBox');
+    hintBox.classList.add('hide');
+  }
 }

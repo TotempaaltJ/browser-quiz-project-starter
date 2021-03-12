@@ -1,4 +1,3 @@
-
 export function resetState() {
     const answerButtonsElement = document.getElementById('answer-buttons');
     while (answerButtonsElement.firstChild) {
@@ -8,4 +7,5 @@ export function resetState() {
     while (hintBox.firstChild) {
         hintBox.removeChild(hintBox.firstChild);
     }
+
 }
