@@ -7,75 +7,116 @@
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  display: flex;
+  background-image: url(background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
-  justify-content: center;
-  align-items: center;
-  background-color: cadetblue;
+  padding: 0;
+  margin: 0;
   font-family: 'Concert One', cursive !important;
   font-size: 1.5rem !important;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient();
 }
 
+/* styling the title and make the color of title related to body color */
+h1 {
+  color: black;
+  font-size: 50px;
+  letter-spacing: 16px;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 1px 1px 20px chocolate, 2px 2px 5px silver, 0px 0px 17px black;
+}
+
+/* The trick to add a class called hide for each element we would hide it */
+.hide {
+  display: none;
+}
+
+/* styling the main part to show the quiz */
 .centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
   width: 800px;
   max-width: 80%;
-  height: 600px;
+  height: 580px;
   background-color: white;
+  background-image: url(background.jpg);
+  background-position: left;
+  border: 2px solid silver;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0 0 10px 1px;
   text-align: center;
 }
-
-
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 750px;
+  height: 480px;
+  color: white;
+  font-size: 1.5rem;
+}
 
 /* Add style to the counter of correct and questions number */
-#question-number, #question-correct {
-margin-bottom: 20px;
-padding-bottom: 10px;
-font-size:1.8rem;
-color: chocolate;
-text-shadow: 1px 1px 25px rgb(148, 137, 137);
-
+.counter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#question-number,
+#question-correct {
+  font-family: 'Concert One', cursive !important;
+  font-size: 1.5rem !important;
+  color: chocolate;
+  background-color: transparent;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 0 0 3px 1px;
 }
 
 /* Add style to the button of answers and controls as start and next */
-.btn-grid {
+#answer-buttons {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: 10px;
+  gap: 20px;
   margin: 20px 0;
 }
-
-.btn {
-  border: 1px solid black;
-  background-color: cadetblue;
-  border-radius: 15px;
-  padding: 5px 10px;
-  color: white;
-  outline: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-
-.btn:hover {
-
-  background-color: rgba(95, 158, 160, 0.7);
-  cursor: pointer;
-
-}
-
+/* styling the button if the answer is correct */
 .btn.correct {
-  background-color: green;
+  background-image: linear-gradient(270deg, rgb(4, 122, 39), rgb(75, 141, 95));
 }
-
+/* styling the button if the answer is wrong */
 .btn.wrong {
-  background-color: red;
+  background-image: linear-gradient(270deg, rgb(95, 10, 46), rgb(192, 98, 137));
 }
-
+.btn {
+  padding: 10px;
+  background-image: linear-gradient(270deg, chocolate, rgb(255, 169, 56));
+  color: white;
+  font-size: 1.5rem;
+  border: 2px solid black;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  cursor: pointer;
+}
+/* styling the button such as start, next , restart */
 .start-btn,
 .next-btn {
   font-size: 3rem;
@@ -83,32 +124,43 @@ text-shadow: 1px 1px 25px rgb(148, 137, 137);
   padding: 10px 20px;
   font-family: 'Concert One', cursive;
 }
-
 .controls {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.hide {
-  display: none;
-}
-
-
 /* Add style to the get hint text */
 #hint-box {
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
-  align-items:flex-end;
+  justify-content: space-around;
+  align-items: flex-end;
   align-content: flex-end;
-  margin-top: 20px;
+  margin: 10px;
   padding-top: 20px;
 }
-#hint-box a{
+
+#hint-box a {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 0 0 3px 1px;
   text-decoration: none;
-  font-size:1.5rem;
+  font-size: 1.5rem;
   color: chocolate;
-  text-shadow: 1px 1px 25px rgb(148, 137, 137);
+  cursor: pointer;
 }
 
+.modal-question button {
+  justify-content: space-between;
+  font-family: 'Concert One', cursive !important;
+  font-size: 1.5rem !important;
+  color: chocolate;
+  background-color: transparent;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 0 0 3px 1px;
+  cursor: pointer;
+}
