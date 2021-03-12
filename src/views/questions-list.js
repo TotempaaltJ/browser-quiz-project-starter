@@ -21,7 +21,7 @@ export function displayQuestion(question) {
   };
 
   /* Adding the link of resources of each question to the get hint part */
-  const hintBox = document.getElementById('hintBox')
+  const hintBox = document.getElementById('hint-box')
   hintBox.classList.remove('hide') 
   for (const link of question.links) {  
        const href = link.href

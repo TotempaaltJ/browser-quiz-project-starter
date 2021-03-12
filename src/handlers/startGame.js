@@ -7,10 +7,10 @@ import { renderScore } from "./render-score.js";
 export function startGame() {
     data.randomQuestions = quizData.questions.sort(() => Math.random() - 0.5);
     data.currentQuestionIndex = 0;
-    quizData.questions.forEach(question => {
-        return question.selected = null;
-    })
-    console.log(quizData.questions)
+    for (const question of quizData.questions) {
+        question.selected = null;
+    }
+    
     const startButton = document.getElementById('start-btn')
     startButton.classList.add('hide')
 
