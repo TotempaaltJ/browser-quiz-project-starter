@@ -130,8 +130,7 @@ export const quizData = {
       ],
     },
     {
-      text:
-        'Which is the function that calls another function after a time interval?',
+      text:'Which is the function that calls another function after a time interval?',
       answers: {
         a: 'setTimeout()',
         b: 'setTime()',
@@ -201,8 +200,7 @@ export const quizData = {
       ],
     },
     {
-      text:
-        'How to write an IF statement for executing some code if "i" is NOT equal to 5?',
+      text:'How to write an IF statement for executing some code if "i" is NOT equal to 5?',
       answers: {
         a: 'if i <> 5',
         b: 'if (i != 5)',

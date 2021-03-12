@@ -13,11 +13,11 @@ export function setNextQuestion() {
     const startBtn = document.getElementById('start-btn'); // make and show restart button
     startBtn.classList.remove('hide');
     startBtn.innerText = 'Restart';
-  }
+  } else {
 
   //we hide all elements of previous question
   resetState();
 
   //Call displayQuestion with the new current index of the questions list.
   questionToDisplay(data.randomQuestions[data.currentQuestionIndex]);
-}
+}}
