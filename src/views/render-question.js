@@ -1,3 +1,4 @@
+import { data } from '../data.js';
 import { selectAnswer } from '../handlers/select-answer.js';
 
 export function questionToDisplay(question) {
@@ -37,4 +38,7 @@ export function questionToDisplay(question) {
     'Click to add a new question';
   document.getElementById('delete-question').innerText =
     'Click to delete a question';
+
+  //we increment this variable to move through the new random questions list.
+  data.currentQuestionIndex++;
 }

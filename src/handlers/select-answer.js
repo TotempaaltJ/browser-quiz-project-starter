@@ -23,7 +23,7 @@ export function selectAnswer(event) {
     quizData.quiz.correct += 1;
   }
   quizData.quiz.answered += 1;
-  renderScore()
+  renderScore();
 
   //Change the color and style of correct answer and wrong once
   const answerButton = document.getElementById('answer-buttons').children;
@@ -34,16 +34,5 @@ export function selectAnswer(event) {
     );
   }
 
-  //keep showing next button, while the current index of questions is smaller than questions' list length.
-  if (data.randomQuestions.length > data.currentQuestionIndex + 1) {
-    document.getElementById('next-btn').classList.remove('hide');
-  } else {
-    //when the current index of questions is equal to the questions' list length:
-    document.getElementById('next-btn').classList.add('hide'); // hide next button
-    document.getElementById('question-container').classList.add('hide'); // hide question container
-    document.getElementById('hint-box').classList.add('hide'); // hide the hint tabs
-    const startBtn = document.getElementById('start-btn'); // make and show restart button
-    startBtn.classList.remove('hide');
-    startBtn.innerText = 'Restart';
-  }
+  document.getElementById('next-btn').classList.remove('hide'); // show next button
 }

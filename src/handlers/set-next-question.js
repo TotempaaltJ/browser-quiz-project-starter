@@ -5,8 +5,15 @@ import { questionToDisplay } from '../views/render-question.js';
 export function setNextQuestion() {
   //Each time we call this function:
 
-  //we increment this variable to move through the elements of the new random questions list.
-  data.currentQuestionIndex++;
+  //when  the questions' list length is smaller than the index of current question
+  if (data.randomQuestions.length < data.currentQuestionIndex + 1) {
+    document.getElementById('next-btn').classList.add('hide'); // hide next button
+    document.getElementById('question-container').classList.add('hide'); // hide question container
+    document.getElementById('hint-box').classList.add('hide'); // hide the hint tabs
+    const startBtn = document.getElementById('start-btn'); // make and show restart button
+    startBtn.classList.remove('hide');
+    startBtn.innerText = 'Restart';
+  }
 
   //we hide all elements of previous question
   resetState();
