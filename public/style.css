@@ -152,6 +152,9 @@ h1 {
   color: chocolate;
   cursor: pointer;
 }
+#hint-box a:hover {
+  border: 2px solid white;
+}
 
 .modal-question button {
   justify-content: space-between;
@@ -164,4 +167,7 @@ h1 {
   border-radius: 15px;
   box-shadow: 0 0 3px 1px;
   cursor: pointer;
+}
+.modal-question button:hover {
+  border: 2px solid white;
 }
