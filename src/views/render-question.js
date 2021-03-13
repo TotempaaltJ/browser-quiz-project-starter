@@ -27,7 +27,7 @@ export function questionToDisplay(question) {
   for (const link of question.links) {
     const href = link.href; // get the link of resource of each question
     const hint = document.createElement('a');
-    hint.innerHTML = 'Hint'; // insert word hint
+    hint.innerHTML = 'Source'; // insert word hint
     hint.href = href; // insert the link
     hint.target = '_blank'; // make the link open in new tab
     hintBox.appendChild(hint);

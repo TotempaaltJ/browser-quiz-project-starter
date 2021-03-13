@@ -14,10 +14,11 @@ export function setNextQuestion() {
     startBtn.classList.remove('hide');
     startBtn.innerText = 'Restart';
   } else {
+    document.getElementById('next-btn').classList.remove('hide'); // show next button
+    //we hide all elements of previous question
+    resetState();
 
-  //we hide all elements of previous question
-  resetState();
-
-  //Call displayQuestion with the new current index of the questions list.
-  questionToDisplay(data.randomQuestions[data.currentQuestionIndex]);
-}}
+    //Call displayQuestion with the new current index of the questions list.
+    questionToDisplay(data.randomQuestions[data.currentQuestionIndex]);
+  }
+}

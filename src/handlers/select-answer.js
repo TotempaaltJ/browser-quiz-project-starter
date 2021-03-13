@@ -1,7 +1,6 @@
 import { quizData } from '../data.js';
-import { data } from '../data.js';
 import { setStatusClass } from '../views/set-status.js';
-import { renderScore } from '../views/render-score.js';
+import { renderScore } from '../handlers/render-score.js';
 
 export function selectAnswer(event) {
   const selectedButton = event.target;
@@ -33,6 +32,4 @@ export function selectAnswer(event) {
       button.dataset.correctKey === button.dataset.answerKey
     );
   }
-
-  document.getElementById('next-btn').classList.remove('hide'); // show next button
 }

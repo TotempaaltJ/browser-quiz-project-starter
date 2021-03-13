@@ -1,7 +1,7 @@
 import { data } from '../data.js';
 import { quizData } from '../data.js';
 import { setNextQuestion } from './set-next-question.js';
-import { renderScore } from '../views/render-score.js';
+import { renderScore } from '../handlers/render-score.js';
 
 export function startGame() {
   //In case starting the game:
