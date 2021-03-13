@@ -9,7 +9,7 @@ export function setNextQuestion() {
   if (data.randomQuestions.length < data.currentQuestionIndex + 1) {
     document.getElementById('next-btn').classList.add('hide'); // hide next button
     document.getElementById('question-container').classList.add('hide'); // hide question container
-    document.getElementById('hint-box').classList.add('hide'); // hide the hint tabs
+    document.querySelector('a').classList.add('hide'); // hide the hint tabs
     const startBtn = document.getElementById('start-btn'); // make and show restart button
     startBtn.classList.remove('hide');
     startBtn.innerText = 'Restart';
