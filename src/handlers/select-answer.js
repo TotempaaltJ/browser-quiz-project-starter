@@ -18,7 +18,7 @@ export function selectAnswer(event) {
   }
 
   // checking if the of selectedButton has same dataset keys (same letter a, b, c, d)
-  if (selectedButton.dataset.correctKey === selectedButton.dataset.answerKey) {
+  if (selectedButton.dataset.correctKey.toLowerCase() === selectedButton.dataset.answerKey.toLowerCase()) {
     quizData.quiz.correct += 1;
   }
   quizData.quiz.answered += 1;

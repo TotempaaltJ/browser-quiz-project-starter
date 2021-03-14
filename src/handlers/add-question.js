@@ -22,7 +22,7 @@ export function questionToAdd() {
       c: `${thirdAnswer}`,
       d: `${fourthAnswer}`,
     },
-    correct: `${correctAnswer}`,
+    correct: `${correctAnswer.toLowerCase()}`,
     selected: null,
     links: [
       {
