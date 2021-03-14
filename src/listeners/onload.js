@@ -1,7 +1,7 @@
 import { startGame } from '../handlers/start-game.js';
 import { setNextQuestion } from '../handlers/set-next-question.js';
-import { questionToDelete } from '../handlers/delete-Question.js';
-import { questionToAdd } from '../handlers/add-Question.js';
+import { questionToDelete } from '../handlers/delete-question.js';
+import { questionToAdd } from '../handlers/add-question.js';
 
 document.getElementById('start-btn').addEventListener('click', startGame); //Start or Restart the game
 

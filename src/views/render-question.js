@@ -11,7 +11,7 @@ export function questionToDisplay(question) {
   for (const [key, value] of Object.entries(answers)) {
     const button = document.createElement('button'); // Creating the button of each answer
     button.classList.add('btn');
-    button.innerText = value; // add the test of answer
+    button.innerText = value; // add the text of answer
     button.dataset.answerKey = key; // add the key of answer : a, b, c, d
     button.dataset.correctKey = question.correct; // add the key of correct answer
     button.dataset.question = question.text; // add the question text to use it in the select answer function
@@ -27,9 +27,9 @@ export function questionToDisplay(question) {
   for (const link of question.links) {
     const href = link.href; // get the link of resource of each question
     const hint = document.createElement('a');
-    hint.innerHTML = 'Source'; // insert word hint
-    hint.href = href; // insert the link
-    hint.target = '_blank'; // make the link open in new tab
+    hint.innerHTML = 'Source';
+    hint.href = href; 
+    hint.target = '_blank'; 
     hintBox.appendChild(hint);
   }
 

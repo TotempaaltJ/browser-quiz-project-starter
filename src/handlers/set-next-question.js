@@ -6,7 +6,7 @@ export function setNextQuestion() {
   //Each time we call this function:
 
   //when  the questions' list length is smaller than the index of current question
-  if (data.randomQuestions.length < data.currentQuestionIndex + 1) {
+  if (data.randomQuestions.length <= data.currentQuestionIndex) {
     document.getElementById('next-btn').classList.add('hide'); // hide next button
     document.getElementById('question-container').classList.add('hide'); // hide question container
     document.querySelector('a').classList.add('hide'); // hide the hint tabs
