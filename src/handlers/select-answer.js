@@ -4,7 +4,7 @@ import { renderScore } from '../handlers/render-score.js';
 
 export function selectAnswer(event) {
   const selectedButton = event.target;
-
+  selectedButton.style.borderColor = 'gold'
   // looping through the questions list to check which question is answered with the selectedButton
   for (const question of quizData.questions) {
     if (question.text === selectedButton.dataset.question) {
