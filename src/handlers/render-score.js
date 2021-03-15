@@ -1,15 +1,15 @@
-import { createCountsAnswered } from '../views/show-amounts.js';
-import { createCountsCorrect } from '../views/show-amounts.js';
 import { quizData } from '../data.js';
 
 export function renderScore() {
-  const qn = document.getElementById('question-number');
-  qn.classList.remove('hide');
-  const countAnswered = createCountsAnswered(quizData);
-  qn.innerHTML = countAnswered;
+  //Show counter of the answered questions of total number of questions list:
 
-  const cc = document.getElementById('question-correct');
-  cc.classList.remove('hide');
-  const countCorrect = createCountsCorrect(quizData);
-  cc.innerHTML = countCorrect;
+  const questionNumber = document.getElementById('question-number');
+  questionNumber.classList.remove('hide');
+  questionNumber.innerHTML = `Answered: ${quizData.quiz.answered} / ${quizData.questions.length}`;
+
+  //Show score of the Correct answered questions of total answered questions:
+
+  const questionCorrect = document.getElementById('question-correct');
+  questionCorrect.classList.remove('hide');
+  questionCorrect.innerHTML = `Correct answers:  ${quizData.quiz.correct} / ${quizData.quiz.answered}`;
 }

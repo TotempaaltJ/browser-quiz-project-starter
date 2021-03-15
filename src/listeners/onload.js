@@ -1,17 +1,15 @@
-import { displayQuestion } from '../views/questions-list.js';
-import { startGame } from '../handlers/startGame.js';
-import { setNextQuestion } from '../handlers/setNextQuestion.js';
-import { data} from '../data.js';
+import { startGame } from '../handlers/start-game.js';
+import { setNextQuestion } from '../handlers/set-next-question.js';
+import { questionToDelete } from '../handlers/delete-question.js';
+import { questionToAdd } from '../handlers/add-question.js';
 
-window.addEventListener('DomContentLoaded', displayQuestion);
+document.getElementById('start-btn').addEventListener('click', startGame); //Start or Restart the game
 
-document.getElementById('deletequestion').addEventListener('click', deleteQuestion);
+document.getElementById('next-btn').addEventListener('click', setNextQuestion); //Next question
 
-
-document.getElementById('start-btn').addEventListener('click', startGame);
-document.getElementById('addquestion').addEventListener('click', addQuestion);
-document.getElementById('next-btn').addEventListener('click', () => {
-  data.currentQuestionIndex++;
-  setNextQuestion();
-});
-
+document
+  .getElementById('delete-question')
+  .addEventListener('click', questionToDelete); //choice to delete a question
+document
+  .getElementById('add-question')
+  .addEventListener('click', questionToAdd); //choice to add a question
